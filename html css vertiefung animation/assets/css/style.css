@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    transition: 0.5s;
+}
+
+.animation {
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation {
+
+    0% {
+        box-shadow: 30px 30px 15px silver;
+
+    }
+
+    25% {
+        box-shadow: 30px -30px 15px lightslategray;
+
+
+    }
+
+    50% {
+        box-shadow: -30px 30px 15px blueviolet;
+
+
+
+    }
+
+    75% {
+        box-shadow: 30px -30px 15px goldenrod;
+
+
+
+    }
+
+    100% {
+        box-shadow: -30px 30px 15px tomato;
+
+
+
+    }
+}
